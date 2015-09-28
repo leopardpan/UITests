@@ -52,8 +52,47 @@
         [window pressForDuration:3];
     }
     
-    [app.buttons[@"push to Detail"] tap];
+    if ([[app alerts] count] > 0) {
+        // 登录失败
+        [app.alerts.collectionViews.buttons[@"确定"] tap];
+        
+        XCUIElement *clear = app.buttons[@"Clear"];
+        if ([self canOperateElement:clear]) {
+            [clear tap];
+            
+            if ([self canOperateElement:userNameElement]) {
+                [userNameElement tap];
+                [userNameElement typeText:@"leopard"];
+            }
+            if ([self canOperateElement:psdElement]) {
+                [psdElement tap];
+                [psdElement typeText:@"123"];
+            }
+            
+            if ([self canOperateElement:loginBtn]) {
+                [loginBtn tap];
+            }
+            if ([self canOperateElement:window]) {
+                [window pressForDuration:3];
+            }
+            [app.buttons[@"Login"] tap];
+            
+        }
+    
+    } else {
+        [app.buttons[@"Login"] tap];
+    }
+    
 
+}
+
+- (void)loginSuccess {
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    XCUIElement *window = [[app windows] elementAtIndex:0];
+    if ([self canOperateElement:window]) {
+        [window pressForDuration:1];
+    }
+    
 }
 
 - (void)tearDown {
@@ -64,6 +103,8 @@
 - (void)testExample {
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    [self testHomeViewController];
 }
 
 - (XCUIElement *)getAccount:(NSString *)name {
