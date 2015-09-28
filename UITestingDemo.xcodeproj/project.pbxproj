@@ -14,6 +14,10 @@
 		D6FA73AC1BB911CC00174491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6FA73AB1BB911CC00174491 /* Assets.xcassets */; };
 		D6FA73AF1BB911CC00174491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FA73AD1BB911CC00174491 /* LaunchScreen.storyboard */; };
 		D6FA73BA1BB911CC00174491 /* UITestingDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FA73B91BB911CC00174491 /* UITestingDemoUITests.m */; };
+		D6FA73CB1BB911EF00174491 /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FA73C81BB911EF00174491 /* Button.m */; settings = {ASSET_TAGS = (); }; };
+		D6FA73CC1BB911EF00174491 /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FA73C81BB911EF00174491 /* Button.m */; settings = {ASSET_TAGS = (); }; };
+		D6FA73D61BB9158200174491 /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FA73D51BB9158200174491 /* Label.m */; settings = {ASSET_TAGS = (); }; };
+		D6FA73D71BB9158200174491 /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FA73D51BB9158200174491 /* Label.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		D6FA73B51BB911CC00174491 /* UITestingDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestingDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FA73B91BB911CC00174491 /* UITestingDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITestingDemoUITests.m; sourceTree = "<group>"; };
 		D6FA73BB1BB911CC00174491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6FA73C71BB911EF00174491 /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
+		D6FA73C81BB911EF00174491 /* Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Button.m; sourceTree = "<group>"; };
+		D6FA73D41BB9158200174491 /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label.h; sourceTree = "<group>"; };
+		D6FA73D51BB9158200174491 /* Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Label.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		D6FA739E1BB911CC00174491 /* UITestingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D6FA73C41BB911EF00174491 /* Util */,
 				D6FA73A21BB911CC00174491 /* AppDelegate.h */,
 				D6FA73A31BB911CC00174491 /* AppDelegate.m */,
 				D6FA73A51BB911CC00174491 /* ViewController.h */,
@@ -109,6 +118,17 @@
 				D6FA73BB1BB911CC00174491 /* Info.plist */,
 			);
 			path = UITestingDemoUITests;
+			sourceTree = "<group>";
+		};
+		D6FA73C41BB911EF00174491 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D6FA73C71BB911EF00174491 /* Button.h */,
+				D6FA73C81BB911EF00174491 /* Button.m */,
+				D6FA73D41BB9158200174491 /* Label.h */,
+				D6FA73D51BB9158200174491 /* Label.m */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +233,8 @@
 			files = (
 				D6FA73A71BB911CC00174491 /* ViewController.m in Sources */,
 				D6FA73A41BB911CC00174491 /* AppDelegate.m in Sources */,
+				D6FA73CB1BB911EF00174491 /* Button.m in Sources */,
+				D6FA73D61BB9158200174491 /* Label.m in Sources */,
 				D6FA73A11BB911CC00174491 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +243,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6FA73D71BB9158200174491 /* Label.m in Sources */,
+				D6FA73CC1BB911EF00174491 /* Button.m in Sources */,
 				D6FA73BA1BB911CC00174491 /* UITestingDemoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

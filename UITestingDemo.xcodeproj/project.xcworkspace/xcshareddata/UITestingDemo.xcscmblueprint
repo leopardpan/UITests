@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "91BDF2291EAB7933517F090189146CCBD4B6523A" : 0,
+    "98E162B6D3B00DBAD461851B33BC401F25F70C9A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D15FC4B0-903C-4826-8813-AF6F93737C83",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "91BDF2291EAB7933517F090189146CCBD4B6523A" : "UITestingDemo\/UITestingDemo\/Lib\/analytics-sdk-ios\/",
+    "98E162B6D3B00DBAD461851B33BC401F25F70C9A" : "UITestingDemo\/UITestingDemo\/Lib\/talkingdata-ios-common\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "UITestingDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "UITestingDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/gitlab.tenddata.com:2201\/git\/analytics-sdk-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "91BDF2291EAB7933517F090189146CCBD4B6523A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/gitlab.tenddata.com:2201\/git\/talkingdata-sdk-ios-common.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "98E162B6D3B00DBAD461851B33BC401F25F70C9A"
+    }
+  ]
+}
