@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		D604169F1BB9318C00378C15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D604169E1BB9318C00378C15 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D6A5B1841BBA4A3B0039DD1B /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5B1821BBA4A3B0039DD1B /* libTalkingData.a */; settings = {ASSET_TAGS = (); }; };
+		D6A5B1851BBA4A3B0039DD1B /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5B1821BBA4A3B0039DD1B /* libTalkingData.a */; settings = {ASSET_TAGS = (); }; };
+		D6A5B1871BBA56630039DD1B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5B1861BBA56630039DD1B /* CoreMotion.framework */; };
+		D6A5B1891BBA566F0039DD1B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5B1881BBA566F0039DD1B /* Security.framework */; };
+		D6A5B18B1BBA56740039DD1B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5B18A1BBA56740039DD1B /* AdSupport.framework */; };
+		D6A5B18D1BBA567D0039DD1B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5B18C1BBA567D0039DD1B /* SystemConfiguration.framework */; };
+		D6A5B18F1BBA5BC40039DD1B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5B18E1BBA5BC40039DD1B /* libz.tbd */; };
+		D6A5B1911BBA5BE10039DD1B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5B1901BBA5BE10039DD1B /* CoreTelephony.framework */; };
+		D6A5B1921BBA5C470039DD1B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5B1861BBA56630039DD1B /* CoreMotion.framework */; };
+		D6A5B1941BBA5C5B0039DD1B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5B1881BBA566F0039DD1B /* Security.framework */; };
+		D6A5B1951BBA5C650039DD1B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5B18A1BBA56740039DD1B /* AdSupport.framework */; };
+		D6A5B1961BBA5C6D0039DD1B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5B18C1BBA567D0039DD1B /* SystemConfiguration.framework */; };
+		D6CBBCE61BBA5C9F00B259A6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5B18E1BBA5BC40039DD1B /* libz.tbd */; };
+		D6CBBCE71BBA5CF200B259A6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A5B1901BBA5BE10039DD1B /* CoreTelephony.framework */; };
 		D6FA73A11BB911CC00174491 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FA73A01BB911CC00174491 /* main.m */; };
 		D6FA73A41BB911CC00174491 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FA73A31BB911CC00174491 /* AppDelegate.m */; };
 		D6FA73AA1BB911CC00174491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FA73A81BB911CC00174491 /* Main.storyboard */; };
@@ -33,6 +47,14 @@
 /* Begin PBXFileReference section */
 		D604169D1BB9318C00378C15 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D604169E1BB9318C00378C15 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D6A5B1821BBA4A3B0039DD1B /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
+		D6A5B1831BBA4A3B0039DD1B /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
+		D6A5B1861BBA56630039DD1B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D6A5B1881BBA566F0039DD1B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D6A5B18A1BBA56740039DD1B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D6A5B18C1BBA567D0039DD1B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D6A5B18E1BBA5BC40039DD1B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D6A5B1901BBA5BE10039DD1B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		D6FA739C1BB911CC00174491 /* UITestingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITestingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FA73A01BB911CC00174491 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D6FA73A21BB911CC00174491 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,6 +77,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6CBBCE61BBA5C9F00B259A6 /* libz.tbd in Frameworks */,
+				D6A5B1841BBA4A3B0039DD1B /* libTalkingData.a in Frameworks */,
+				D6CBBCE71BBA5CF200B259A6 /* CoreTelephony.framework in Frameworks */,
+				D6A5B1961BBA5C6D0039DD1B /* SystemConfiguration.framework in Frameworks */,
+				D6A5B1951BBA5C650039DD1B /* AdSupport.framework in Frameworks */,
+				D6A5B1941BBA5C5B0039DD1B /* Security.framework in Frameworks */,
+				D6A5B1921BBA5C470039DD1B /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,15 +91,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A5B1911BBA5BE10039DD1B /* CoreTelephony.framework in Frameworks */,
+				D6A5B18F1BBA5BC40039DD1B /* libz.tbd in Frameworks */,
+				D6A5B18D1BBA567D0039DD1B /* SystemConfiguration.framework in Frameworks */,
+				D6A5B18B1BBA56740039DD1B /* AdSupport.framework in Frameworks */,
+				D6A5B1891BBA566F0039DD1B /* Security.framework in Frameworks */,
+				D6A5B1871BBA56630039DD1B /* CoreMotion.framework in Frameworks */,
+				D6A5B1851BBA4A3B0039DD1B /* libTalkingData.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D6A5B1811BBA4A2F0039DD1B /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D6A5B1821BBA4A3B0039DD1B /* libTalkingData.a */,
+				D6A5B1831BBA4A3B0039DD1B /* TalkingData.h */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
 		D6FA73931BB911CC00174491 = {
 			isa = PBXGroup;
 			children = (
+				D6A5B1901BBA5BE10039DD1B /* CoreTelephony.framework */,
+				D6A5B18E1BBA5BC40039DD1B /* libz.tbd */,
+				D6A5B18C1BBA567D0039DD1B /* SystemConfiguration.framework */,
+				D6A5B18A1BBA56740039DD1B /* AdSupport.framework */,
+				D6A5B1881BBA566F0039DD1B /* Security.framework */,
+				D6A5B1861BBA56630039DD1B /* CoreMotion.framework */,
 				D6FA739E1BB911CC00174491 /* UITestingDemo */,
 				D6FA73B81BB911CC00174491 /* UITestingDemoUITests */,
 				D6FA739D1BB911CC00174491 /* Products */,
@@ -89,6 +140,7 @@
 		D6FA739E1BB911CC00174491 /* UITestingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D6A5B1811BBA4A2F0039DD1B /* Lib */,
 				D6FA73C41BB911EF00174491 /* Util */,
 				D6FA73A21BB911CC00174491 /* AppDelegate.h */,
 				D6FA73A31BB911CC00174491 /* AppDelegate.m */,
@@ -367,6 +419,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UITestingDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UITestingDemo/Lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = PBX.UITestingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -378,6 +435,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UITestingDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UITestingDemo/Lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = PBX.UITestingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -388,6 +450,10 @@
 			buildSettings = {
 				INFOPLIST_FILE = UITestingDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UITestingDemo/Lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PBX.UITestingDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = UITestingDemo;
@@ -400,6 +466,10 @@
 			buildSettings = {
 				INFOPLIST_FILE = UITestingDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UITestingDemo/Lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PBX.UITestingDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = UITestingDemo;

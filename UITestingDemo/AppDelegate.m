@@ -7,17 +7,32 @@
 //
 
 #import "AppDelegate.h"
-
+#import "TalkingData.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
+// AppID 只要拥有AppID，就可以在这个账号上，更改这个AppID的所有东西。
+#define AppID @"05DB565D44051573C597616275F51EC2"
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    [self setupTalkingData];
     // Override point for customization after application launch.
     return YES;
+}
+
+- (void)setupTalkingData {
+
+    // 开启App崩溃捕捉功功能  默认是NO
+    [TalkingData setExceptionReportEnabled:YES];
+    // 开启TalkingData内部，日志输出  默认是YES
+    [TalkingData setLogEnabled:YES];
+    
+    // 初始化SDK，只要调用了这一接口，就集成了灵动分析功能。
+    [TalkingData sessionStarted:AppID withChannelId:@"Github"];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

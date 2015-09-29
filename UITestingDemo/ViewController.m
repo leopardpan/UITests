@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TalkingData.h"
 
 @interface ViewController ()
 
@@ -34,6 +35,7 @@ NSString *psd = @"123";
     self.title = @"登陆";
     sender.enabled = YES;
     if ([self.userNameTextField.text isEqualToString:name] && [self.psdTextField.text isEqualToString:psd]) {
+        
         NSUserDefaults *userdf = [NSUserDefaults standardUserDefaults];
         [userdf setObject:self.userNameTextField.text forKey:@"name"];
         
@@ -41,6 +43,8 @@ NSString *psd = @"123";
         UIViewController *vc = [mainSB instantiateViewControllerWithIdentifier:@""];
         [self.navigationController pushViewController:vc animated:YES];
     } else {
+        
+        // iOS8之后 使用 UIAlertController 做弹框
         UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"" message:@"登陆失败" preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
@@ -61,10 +65,20 @@ NSString *psd = @"123";
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self.userNameTextField resignFirstResponder];
-    [self.psdTextField resignFirstResponder];
+    
+    [self.view endEditing:YES];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // 开始页面跟踪，记录这个页面的停留时长
+    [TalkingData trackPageBegin:@"Home_page"];
+}
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    // 结束页面跟踪，记录这个页面的停留时长
+    [TalkingData trackPageEnd:@"Home_page"];
+}
 
 @end
